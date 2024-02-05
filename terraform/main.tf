@@ -2,8 +2,8 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "AWS_SECURITY@hcl.com"
-    AccountName               = "prod-app-account"
+    AccountEmail              = "diptangshu.chakr@hcl.com"
+    AccountName               = "prod-app1-account"
     ManagedOrganizationalUnit = "Prod-Workload"
     SSOUserEmail              = "diptangshu.chakr@hcl.com"
     SSOUserFirstName          = "Diptangshu"
