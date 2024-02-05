@@ -2,12 +2,12 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "<ACCOUNT EMAIL>"
-    AccountName               = "sandbox-aft"
-    ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "<SSO EMAIL>"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
+    AccountEmail              = "AWS_SECURITY@hcl.com"
+    AccountName               = "prod-app-account"
+    ManagedOrganizationalUnit = "Prod-Workload"
+    SSOUserEmail              = "diptangshu.chakr@hcl.com"
+    SSOUserFirstName          = "Diptangshu"
+    SSOUserLastName           = "Chakraborty"
   }
 
   account_tags = {
@@ -20,7 +20,7 @@ module "sandbox" {
   }
 
   custom_fields = {
-    group = "non-prod"
+    group = "prod"
   }
 
   account_customizations_name = "sandbox"
